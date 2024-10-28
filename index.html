@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        nav {
+            background-color: #2e7d32;
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #a5d6a7;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #2e7d32;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            color: #4caf50;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 40px 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #388e3c;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .projeto {
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+
+        .projeto:hover {
+            transform: scale(1.05);
+        }
+
+        .projeto h3 {
+            font-size: 1.5rem;
+            color: #388e3c;
+        }
+
+        .projeto a {
+            color: #2e7d32;
+            text-decoration: none;
+        }
+
+        .projeto a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #388e3c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #2e7d32;
+        }
+
+        #contato {
+            background-color: #ffffff; 
+            padding: 40px 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        #contato ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #contato ul li a {
+            color: #2e7d32;
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #2e7d32;
+            color: #fff;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .foto-perfil {
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 2px solid #229799; 
+        }
+
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Portfólio - Luis Fernando</h1>
+        <p>Bem-vindo ao meu espaço de projetos e realizações!</p>
+        <img src="foto.png" alt="Foto Luis" class="foto-perfil">
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Olá! Meu nome é Luis Fernando. Sou um estudante de Engenharia com uma paixão por tecnologia e inovação. Estou sempre em busca de novos desafios que me permitam expandir meu conhecimento e habilidades. Ao longo da minha jornada acadêmica, desenvolvi um forte interesse por programação, especialmente em projetos que envolvem algoritmos e soluções práticas.</p>
+        <p>Nos meus momentos de lazer, gosto de participar de conversas no Discord, onde interajo com pessoas de diferentes países e troco experiências. Acredito que essa troca cultural enriquece muito minha visão de mundo.</p>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projeto">
+            <h3>Sistema Bancário em C</h3>
+            <p>Desenvolvi na disciplina de Algoritmos e Programação de Computadores um Sistema Bancário em C que permite aos usuários criar contas, consultar saldos, fazer depósitos, saques e transferências. Este projeto me proporcionou a oportunidade de aplicar conceitos de programação e criar uma aplicação funcional. No futuro, planejo implementar estruturas de dados mais avançadas para melhorar a eficiência do sistema.<br><a href="https://github.com/LuisCodeMaster/Projeto-Final---C" target="_blank">Ver Projeto</a></p>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies e Atividades de Lazer</h2>
+        <ul>
+            <li>Participar de conversas no Discord</li>
+            <li>Jogar vídeo games</li>
+            <li>Explorar novas tecnologias</li>
+            <li>Ler sobre programação e desenvolvimento pessoal</li>
+            <li>Aprender inglês</li> 
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <ul>
+            <li>
+                <a href="mailto:fernandoluis12605@gmail.com" class="botao-contato">Envie um e-mail</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/luis-fernando-teixeira-alves-dos-santos-b2a626232/" class="botao-contato">Meu LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://github.com/LuisCodeMaster" class="botao-contato">Meu GitHub</a>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Luis Fernando.</p>
+    </footer>
+</body>
+</html>
